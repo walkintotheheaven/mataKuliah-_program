@@ -11,7 +11,6 @@ public class quizTask {
 
             int keseluruhanMahasiswa = 0;
             int keseluruhanMatkuliah = 0;
-            // int newnumberMatkul = 0;
 
             String selection = "yes";
 
@@ -25,16 +24,13 @@ public class quizTask {
                   int totalMahasiswa = 0;
 
                   // INPUT MATA KULIAH & JUMLAH MAHASISWA
-                  // int numberMatkul = 0;
                   do {
-                        // numberMatkul = numberMatkul + 1;
                         totalMatkul++;
                         System.out.println(
-                                    "Inputkan Mata Kuliah ke - " + /* numberMatkul */ totalMatkul + " di Semester "
+                                    "Inputkan Mata Kuliah ke - " + totalMatkul + " di Semester "
                                                 + semesterIni);
 
                         System.out.println("Input Mata Kuliah: ");
-                        // buat text biar ada spasinya
                         sc.nextLine();
                         String mataKuliah = sc.nextLine();
                         System.out.println("Input Jumlah Mahasiswa yang mengambil mata kuliah tersebut: ");
@@ -42,7 +38,7 @@ public class quizTask {
 
                         System.out.println("\u001B[32m>Result In1put:\n");
                         System.out.println("Semester yang ditempuh: " + semesterIni);
-                        System.out.println("Mata Kuliah ke - " + /* numberMatkul */ totalMatkul);
+                        System.out.println("Mata Kuliah ke - " + totalMatkul);
                         System.out.println("Dengan Mata Kuliah: " + mataKuliah);
                         System.out.println("Memiliki jumlah mahasiswa sebanyak: " + jumlahMahasiswa + "\u001B[0m");
 
@@ -50,7 +46,6 @@ public class quizTask {
                                     "\u001B[31m>>>Apakah anda ingin menginput mata kuliah lain di semester yang sama? (yes/no)<<<\u001B[0m");
 
                         totalMahasiswa += jumlahMahasiswa;
-                        // newnumberMatkul += totalMatkul;
                         lagi = sc.next();
                   } while (lagi.equals("yes"));
 
